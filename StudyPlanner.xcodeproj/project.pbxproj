@@ -14,6 +14,7 @@
 		FFDD51E329BA31B600B00E5B /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDD51E229BA31B600B00E5B /* Course.swift */; };
 		FFDD51E529BA31BF00B00E5B /* Objective.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDD51E429BA31BF00B00E5B /* Objective.swift */; };
 		FFDD51E829BA338600B00E5B /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = FFDD51E729BA338600B00E5B /* SwiftDate */; };
+		FFDD51EA29BACF2600B00E5B /* CourseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDD51E929BACF2600B00E5B /* CourseStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FFDD51DB29BA316000B00E5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFDD51E229BA31B600B00E5B /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		FFDD51E429BA31BF00B00E5B /* Objective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objective.swift; sourceTree = "<group>"; };
+		FFDD51E929BACF2600B00E5B /* CourseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				FFDD51D429BA315E00B00E5B /* StudyPlannerApp.swift */,
 				FFDD51D629BA315E00B00E5B /* ContentView.swift */,
 				FFDD51E229BA31B600B00E5B /* Course.swift */,
+				FFDD51E929BACF2600B00E5B /* CourseStorage.swift */,
 				FFDD51E429BA31BF00B00E5B /* Objective.swift */,
 				FFDD51D829BA316000B00E5B /* Assets.xcassets */,
 				FFDD51DA29BA316000B00E5B /* Preview Content */,
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFDD51E329BA31B600B00E5B /* Course.swift in Sources */,
+				FFDD51EA29BACF2600B00E5B /* CourseStorage.swift in Sources */,
 				FFDD51E529BA31BF00B00E5B /* Objective.swift in Sources */,
 				FFDD51D729BA315E00B00E5B /* ContentView.swift in Sources */,
 				FFDD51D529BA315E00B00E5B /* StudyPlannerApp.swift in Sources */,
