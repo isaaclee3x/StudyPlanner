@@ -13,6 +13,7 @@
 		FFDD51DC29BA316000B00E5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDD51DB29BA316000B00E5B /* Preview Assets.xcassets */; };
 		FFDD51E329BA31B600B00E5B /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDD51E229BA31B600B00E5B /* Course.swift */; };
 		FFDD51E529BA31BF00B00E5B /* Objective.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDD51E429BA31BF00B00E5B /* Objective.swift */; };
+		FFDD51E829BA338600B00E5B /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = FFDD51E729BA338600B00E5B /* SwiftDate */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFDD51E829BA338600B00E5B /* SwiftDate in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = StudyPlanner;
+			packageProductDependencies = (
+				FFDD51E729BA338600B00E5B /* SwiftDate */,
+			);
 			productName = StudyPlanner;
 			productReference = FFDD51D129BA315E00B00E5B /* StudyPlanner.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = FFDD51C829BA315E00B00E5B;
+			packageReferences = (
+				FFDD51E629BA338600B00E5B /* XCRemoteSwiftPackageReference "SwiftDate" */,
+			);
 			productRefGroup = FFDD51D229BA315E00B00E5B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FFDD51E629BA338600B00E5B /* XCRemoteSwiftPackageReference "SwiftDate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/malcommac/SwiftDate";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FFDD51E729BA338600B00E5B /* SwiftDate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFDD51E629BA338600B00E5B /* XCRemoteSwiftPackageReference "SwiftDate" */;
+			productName = SwiftDate;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FFDD51C929BA315E00B00E5B /* Project object */;
 }
