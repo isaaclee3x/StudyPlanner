@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FFB761DA29BC1DAF002E489F /* ObjectiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB761D929BC1DAF002E489F /* ObjectiveView.swift */; };
 		FFDD51D529BA315E00B00E5B /* StudyPlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDD51D429BA315E00B00E5B /* StudyPlannerApp.swift */; };
 		FFDD51D729BA315E00B00E5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDD51D629BA315E00B00E5B /* ContentView.swift */; };
 		FFDD51D929BA316000B00E5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFDD51D829BA316000B00E5B /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FFB761D929BC1DAF002E489F /* ObjectiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectiveView.swift; sourceTree = "<group>"; };
 		FFDD51D129BA315E00B00E5B /* StudyPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDD51D429BA315E00B00E5B /* StudyPlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyPlannerApp.swift; sourceTree = "<group>"; };
 		FFDD51D629BA315E00B00E5B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FFB761D829BC1DA0002E489F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FFB761D929BC1DAF002E489F /* ObjectiveView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FFDD51C829BA315E00B00E5B = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 		FFDD51D329BA315E00B00E5B /* StudyPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				FFB761D829BC1DA0002E489F /* Views */,
 				FFDD51D429BA315E00B00E5B /* StudyPlannerApp.swift */,
 				FFDD51D629BA315E00B00E5B /* ContentView.swift */,
 				FFDD51E229BA31B600B00E5B /* Course.swift */,
@@ -158,6 +169,7 @@
 				FFDD51EA29BACF2600B00E5B /* CourseStorage.swift in Sources */,
 				FFDD51E529BA31BF00B00E5B /* Objective.swift in Sources */,
 				FFDD51D729BA315E00B00E5B /* ContentView.swift in Sources */,
+				FFB761DA29BC1DAF002E489F /* ObjectiveView.swift in Sources */,
 				FFDD51D529BA315E00B00E5B /* StudyPlannerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

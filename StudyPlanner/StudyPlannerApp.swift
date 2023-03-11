@@ -16,7 +16,7 @@ struct StudyPlannerApp: App {
         WindowGroup {
             ContentView()
                 .onAppear {
-                    courseStore.load { result in
+                    CourseStorage.load { result in
                         switch result {
                         case .failure(let error):
                             fatalError(error.localizedDescription)
