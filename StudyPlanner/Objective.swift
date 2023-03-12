@@ -9,23 +9,13 @@ import Foundation
 import SwiftUI
 import SwiftDate
 
-class Objective: Identifiable, Equatable, Codable {
-    static func == (lhs: Objective, rhs: Objective) -> Bool {
-        return lhs.title == rhs.title && lhs.description == rhs.description && lhs.duration == rhs.duration
-    }
+struct Objective: Identifiable, Equatable, Codable {
     
     var id: Int
     
-    init(title: String, description: String) {
-        self.id = 0
-        self.title = title
-        self.description = description
-        self.duration = 1.hours
-    }
-    
     var title: String
     var description: String
-    
+    var courseIn: String //make sure when they add objectives to this course, the courseIn becomes the name of the course
     var duration: DateComponents
 }
 

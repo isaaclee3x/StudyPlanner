@@ -16,6 +16,7 @@
 		FFDD51E529BA31BF00B00E5B /* Objective.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDD51E429BA31BF00B00E5B /* Objective.swift */; };
 		FFDD51E829BA338600B00E5B /* SwiftDate in Frameworks */ = {isa = PBXBuildFile; productRef = FFDD51E729BA338600B00E5B /* SwiftDate */; };
 		FFDD51EA29BACF2600B00E5B /* CourseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDD51E929BACF2600B00E5B /* CourseStorage.swift */; };
+		FFE59A8729BDF21800BDB74B /* ColorCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE59A8629BDF21800BDB74B /* ColorCodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		FFDD51E229BA31B600B00E5B /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		FFDD51E429BA31BF00B00E5B /* Objective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objective.swift; sourceTree = "<group>"; };
 		FFDD51E929BACF2600B00E5B /* CourseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStorage.swift; sourceTree = "<group>"; };
+		FFE59A8629BDF21800BDB74B /* ColorCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorCodable.swift; path = "../../../../Downloads/bb2fc5df202f6a15cc807bd87ff15193-9df9ddf4d7f1f0ae38fcc040b63a1bae95acba32/ColorCodable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				FFDD51E229BA31B600B00E5B /* Course.swift */,
 				FFDD51E929BACF2600B00E5B /* CourseStorage.swift */,
 				FFDD51E429BA31BF00B00E5B /* Objective.swift */,
+				FFE59A8629BDF21800BDB74B /* ColorCodable.swift */,
 				FFDD51D829BA316000B00E5B /* Assets.xcassets */,
 				FFDD51DA29BA316000B00E5B /* Preview Content */,
 			);
@@ -168,6 +171,7 @@
 				FFDD51E329BA31B600B00E5B /* Course.swift in Sources */,
 				FFDD51EA29BACF2600B00E5B /* CourseStorage.swift in Sources */,
 				FFDD51E529BA31BF00B00E5B /* Objective.swift in Sources */,
+				FFE59A8729BDF21800BDB74B /* ColorCodable.swift in Sources */,
 				FFDD51D729BA315E00B00E5B /* ContentView.swift in Sources */,
 				FFB761DA29BC1DAF002E489F /* ObjectiveView.swift in Sources */,
 				FFDD51D529BA315E00B00E5B /* StudyPlannerApp.swift in Sources */,

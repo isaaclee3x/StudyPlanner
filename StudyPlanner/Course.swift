@@ -6,20 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct Course: Identifiable, Equatable, Codable {
     
     var id = UUID()
     
     var name: String
-    var colour = [0.0, 0.0, 0.0] {
-        didSet {
-            if colour.count > 3 {
-                print("Error: colour cannot have more than the 3 rgb parameters")
-                colour = oldValue
-            }
-        }
-    }
+    var colour = Color.black
     
     var objectives: [Objective]
     

@@ -8,13 +8,29 @@
 import SwiftUI
 
 struct ObjectiveView: View {
+    
+    @Binding var objective: Objective
+    var colour: Color
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Circle()
+                .foregroundColor(colour)
+                .frame(width: 15)
+            
+            Text(objective.title)
+                .bold()
+            
+            Text("-  " + objective.description)
+                .font(.system(size: 13))
+            
+        }
+        .frame(maxWidth: (UIScreen.main.bounds.width - 10))
     }
 }
 
 struct ObjectiveView_Previews: PreviewProvider {
     static var previews: some View {
-        ObjectiveView()
+        ObjectiveView(objective: .constant(Objective(id: 0, title: "Learn Strings", description: "Finish learning string manipulation", courseIn: "C++", duration: 1.days)), colour: Color.blue)
     }
 }
