@@ -18,6 +18,7 @@
 		FFDD51EA29BACF2600B00E5B /* CourseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDD51E929BACF2600B00E5B /* CourseStorage.swift */; };
 		FFE59A8729BDF21800BDB74B /* ColorCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE59A8629BDF21800BDB74B /* ColorCodable.swift */; };
 		FFE59A8929BDF42B00BDB74B /* DailyObjectiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE59A8829BDF42B00BDB74B /* DailyObjectiveView.swift */; };
+		FFE59A9129BE0AEB00BDB74B /* Charter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = FFE59A9029BE0ACA00BDB74B /* Charter.ttc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		FFDD51E929BACF2600B00E5B /* CourseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseStorage.swift; sourceTree = "<group>"; };
 		FFE59A8629BDF21800BDB74B /* ColorCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorCodable.swift; path = "../../../../Downloads/bb2fc5df202f6a15cc807bd87ff15193-9df9ddf4d7f1f0ae38fcc040b63a1bae95acba32/ColorCodable.swift"; sourceTree = "<group>"; };
 		FFE59A8829BDF42B00BDB74B /* DailyObjectiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyObjectiveView.swift; sourceTree = "<group>"; };
+		FFE59A8F29BE05DE00BDB74B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFE59A9029BE0ACA00BDB74B /* Charter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; name = Charter.ttc; path = ../../../../../../System/Library/Fonts/Supplemental/Charter.ttc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,7 @@
 		FFDD51D329BA315E00B00E5B /* StudyPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				FFE59A8F29BE05DE00BDB74B /* Info.plist */,
 				FFB761D829BC1DA0002E489F /* Views */,
 				FFDD51D429BA315E00B00E5B /* StudyPlannerApp.swift */,
 				FFDD51E229BA31B600B00E5B /* Course.swift */,
@@ -82,6 +86,7 @@
 				FFDD51E929BACF2600B00E5B /* CourseStorage.swift */,
 				FFDD51E429BA31BF00B00E5B /* Objective.swift */,
 				FFDD51D829BA316000B00E5B /* Assets.xcassets */,
+				FFE59A9029BE0ACA00BDB74B /* Charter.ttc */,
 				FFDD51DA29BA316000B00E5B /* Preview Content */,
 			);
 			path = StudyPlanner;
@@ -161,6 +166,7 @@
 			files = (
 				FFDD51DC29BA316000B00E5B /* Preview Assets.xcassets in Resources */,
 				FFDD51D929BA316000B00E5B /* Assets.xcassets in Resources */,
+				FFE59A9129BE0AEB00BDB74B /* Charter.ttc in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +315,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StudyPlanner/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StudyPlanner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -337,6 +344,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"StudyPlanner/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StudyPlanner/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

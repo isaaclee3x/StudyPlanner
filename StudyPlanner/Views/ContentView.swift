@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var courses = [
+        Course(
+            name: "C++",
+            colour: .blue,
+            objectives: [Objective(id: 0, title: "Strings", description: ["Learn Strings"], colour: .blue, duration: 1.days.timeInterval)],
+            start: Date())]
+    @State var date = Date()
+            
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            DailyObjectiveView(courses: $courses, date: date)
         }
+        .navigationTitle("Courses")
         .padding()
     }
 }

@@ -13,19 +13,24 @@ struct Course: Identifiable, Equatable, Codable {
     var id = UUID()
     
     var name: String
-    var colour = Color.black
+    var colour: Color
     
-    var objectives: [Objective]
+    var objectives: [Objective] = [] {
+        didSet {
+            for i in objectives {
+                let index = objectives.firstIndex(of: i)
+                objectives[index!].colour = colour
+            }
+        }
+    }
     
-    var startOfCourse: Date 
-    var endOfCourse: Date {
-        var objectives = objectives
-        var sorted: [Objective] = []
-        
+    var start: Date
+    var end: Date {
+        var time = 0.0
         if objectives != [] {
-            sorted = objectives.sorted(by: {$0.end < $1.end})
+            for i in objectives { time += i.duration }
         }
         
-        return sorted.last!.end
+        return start.addingTimeInterval(time)
     }
 }

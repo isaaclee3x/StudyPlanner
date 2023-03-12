@@ -9,30 +9,49 @@ import SwiftUI
 
 struct DailyObjectiveView: View {
     
+    @State var objectives: [Objective] = []
     @Binding var courses: [Course]
-    @Binding var date: Date
     
-    var objectives: [Objective] {
-        var toReturn: [Objective] = []
-        for i in courses {
-            toReturn += getObjectivesForDay(date: date, course: i)
-        }
-        return toReturn
-    }
+    var date: Date
     
     var body: some View {
-        VStack {
-            ForEach(courses) { course in
-                
+        VStack(alignment: .leading) {
+            Text(date.toFormat("dd MMMM yyyy"))
+                .font(.system(size: 20))
+                .bold()
             
+            ForEach(objectives) { objective in
+                ObjectiveView(objective: objective, colour: objective.colour)
+            }
+            .background {
+                Rectangle()
+                    .foregroundColor(Color("offWhite"))
+                    .frame(maxWidth: UIScreen.main.bounds.width - 50)
+                    .cornerRadius(10)
+                
+            }
+        }
+        .onAppear {
+            for course in courses {
+                objectives += getObjectivesForDate(date: date, course: course)
             }
         }
     }
     
-    func getObjectivesForDay(date: Date, course: Course) -> [Objective] {
-        var objectives = course.objectives
-        let map = objectives.filter { $0.start == date }
-        return map
+    func getObjectivesForDate(date: Date, course: Course) -> [Objective] {
+        var toReturn: [Objective] = []
+        var date = course.start
+        let objectives = course.objectives.sorted(by: {$0.id < $1.id})
+        
+        for i in 0 ..< objectives.count {
+            if objectives[i].id != 0 {
+                date = date.addingTimeInterval(objectives[i-1].duration)
+            }
+            if date.dateAtStartOf(.day) == self.date.dateAtStartOf(.day) {
+                toReturn.append(objectives[i])
+            }
+        }
+        return toReturn
     }
 }
 
@@ -42,9 +61,10 @@ struct DailyObjectiveView_Previews: PreviewProvider {
             courses: .constant(
                 [Course(
                     name: "C++",
-                    objectives: [Objective(id: 0, title: "Learn Strings", description: ["Learn string interpolation", "Learn string manipulation"], courseIn: "C++", start: Date(), end: Date().addingTimeInterval(1.days.timeInterval))],
-                    startOfCourse: Date())]
-            ), date: .constant(Date())
+                    colour: .blue,
+                    objectives: [Objective(id: 0, title: "Learn Strings", description: ["Learn string interpolation", "Learn string manipulation"], colour: .blue, duration: 1.days.timeInterval)],
+                    start: Date())]
+            ), date: Date()
         )
     }
 }
