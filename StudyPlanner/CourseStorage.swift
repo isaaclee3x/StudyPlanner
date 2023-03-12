@@ -16,7 +16,7 @@ class CourseStorage: ObservableObject {
                                     in: .userDomainMask,
                                     appropriateFor: nil,
                                     create: false)
-        .appendingPathComponent("scrums.data")
+        .appendingPathComponent("courses.data")
     }
     
     static func load(completion: @escaping (Result<[Course], Error>) ->Void ) {

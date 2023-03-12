@@ -37,6 +37,6 @@ struct ObjectiveView: View {
 
 struct ObjectiveView_Previews: PreviewProvider {
     static var previews: some View {
-        ObjectiveView(objective: .constant(Objective(id: 0, title: "Learn Strings", description: ["Learn string interpolation", "Learn string manipulation"], courseIn: "C++", duration: 1.days)), colour: Color.blue)
+        ObjectiveView(objective: .constant(Objective(id: 0, title: "Learn Strings", description: ["Learn string interpolation", "Learn string manipulation"], courseIn: "C++", start: Date(), end: Date().addingTimeInterval(1.days.timeInterval))), colour: Color.blue)
     }
 }

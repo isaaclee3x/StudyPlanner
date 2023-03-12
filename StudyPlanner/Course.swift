@@ -19,14 +19,13 @@ struct Course: Identifiable, Equatable, Codable {
     
     var startOfCourse: Date 
     var endOfCourse: Date {
-        var date = startOfCourse
-        if objectives == [] { print("Error: There are no objectives")}
-        else {
-            for i in objectives {
-                date = date.addingTimeInterval(i.duration.timeInterval)
-            }
+        var objectives = objectives
+        var sorted: [Objective] = []
+        
+        if objectives != [] {
+            sorted = objectives.sorted(by: {$0.end < $1.end})
         }
         
-        return date
+        return sorted.last!.end
     }
 }
