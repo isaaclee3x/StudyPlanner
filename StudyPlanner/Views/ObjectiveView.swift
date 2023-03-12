@@ -23,16 +23,20 @@ struct ObjectiveView: View {
                     .bold()
             }
             
-            Text("-  " + objective.description)
-                .font(.system(size: 13))
             
+            ForEach(objective.description, id: \.self) { description in
+                Text("-  " + description)
+                    .font(.system(size: 13))
+                    .frame(height: 10)
+                    
+            }
         }
-        .frame(maxWidth: (UIScreen.main.bounds.width - 10))
+        .frame(maxWidth: (UIScreen.main.bounds.width - 100))
     }
 }
 
 struct ObjectiveView_Previews: PreviewProvider {
     static var previews: some View {
-        ObjectiveView(objective: .constant(Objective(id: 0, title: "Learn Strings", description: "Finish learning string manipulation", courseIn: "C++", duration: 1.days)), colour: Color.blue)
+        ObjectiveView(objective: .constant(Objective(id: 0, title: "Learn Strings", description: ["Learn string interpolation", "Learn string manipulation"], courseIn: "C++", duration: 1.days)), colour: Color.blue)
     }
 }
