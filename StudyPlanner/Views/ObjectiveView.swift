@@ -14,12 +14,14 @@ struct ObjectiveView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Circle()
-                .foregroundColor(colour)
-                .frame(width: 15)
-            
-            Text(objective.title)
-                .bold()
+            HStack {
+                Circle()
+                    .foregroundColor(colour)
+                    .frame(width: 8)
+                
+                Text(objective.title)
+                    .bold()
+            }
             
             Text("-  " + objective.description)
                 .font(.system(size: 13))
